@@ -25,11 +25,17 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text("Hola mundo!!"),
+            title: Text("SpaceX"),
+            backgroundColor: Colors.pink,
           ),
-          body: Center(
-            child: Text("Hola Mundo"),
-          ),
+          body: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('img/spacex.jpg'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Center(child: Container(child: Text("hey Flutter")))),
         ) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
