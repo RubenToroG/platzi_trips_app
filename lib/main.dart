@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,20 +25,10 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            centerTitle: true,
-            title: Text("SpaceX"),
-            backgroundColor: Colors.pink,
+            title: Text("Hola mundo"),
           ),
-          body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('img/spacex.jpg'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: Center(child: Container(child: Text("hey Flutter")))),
-        ) //MyHomePage(title: 'Flutter Demo Home Page'),
-        );
+          body: new DescriptionPlace(),
+        ));
   }
 }
 
