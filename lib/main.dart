@@ -7,6 +7,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  String descriptionDummy =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text("Hola mundo"),
           ),
-          body: new DescriptionPlace(),
+          body: new DescriptionPlace("Bahamas", 4, descriptionDummy),
         ));
   }
 }
