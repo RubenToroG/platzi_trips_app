@@ -11,8 +11,6 @@ class Review extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: implement build
-
     final userComment = Container(
       margin: EdgeInsets.only(left: 20.0),
       child: Text(
