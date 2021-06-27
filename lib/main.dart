@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   String descriptionDummy =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +29,21 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
+          /*appBar: AppBar(
             title: Text("Platzi Trips"),
+          ),*/
+          //body: new
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace("Cali - Colombia", 4, descriptionDummy),
+                  ReviewList()
+                ],
+              ),
+              GradientBack()
+            ],
           ),
-          //body: new DescriptionPlace("Cali - Colombia", 4, descriptionDummy),
-          body: ReviewList(),
         ));
   }
 }
