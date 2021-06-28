@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
+import 'platzi_trips.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -14,8 +11,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-  String descriptionDummy =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   @override
   Widget build(BuildContext context) {
@@ -33,23 +28,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          /*appBar: AppBar(
-            title: Text("Platzi Trips"),
-          ),*/
-          //body: new
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPlace("Cali - Colombia", 4, descriptionDummy),
-                  ReviewList()
-                ],
-              ),
-              HeaderAppBar()
-            ],
-          ),
-        ));
+        home: PlatziTrips());
   }
 }
 

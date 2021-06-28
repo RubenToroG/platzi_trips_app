@@ -27,7 +27,7 @@ class Review extends StatelessWidget {
       size: 20,
       color: Color(0xFFf2C611),
     ));
-    final star_border = Container(
+    final starBorder = Container(
         child: Icon(
       Icons.star_border,
       size: 20,
@@ -46,7 +46,7 @@ class Review extends StatelessWidget {
           ),
         ),
         Row(
-          children: <Widget>[star, star, star, star, star_border],
+          children: <Widget>[star, star, star, star, starBorder],
         )
       ],
     );
