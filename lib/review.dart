@@ -21,14 +21,34 @@ class Review extends StatelessWidget {
       ),
     );
 
-    final userInfo = Container(
-      margin: EdgeInsets.only(left: 20.0),
-      child: Text(
-        details,
-        textAlign: TextAlign.left,
-        style: TextStyle(
-            fontFamily: "Lato", fontSize: 13.0, color: Color(0xFFa3a5a7)),
-      ),
+    final star = Container(
+        child: Icon(
+      Icons.star,
+      size: 20,
+      color: Color(0xFFf2C611),
+    ));
+    final star_border = Container(
+        child: Icon(
+      Icons.star_border,
+      size: 20,
+      color: Color(0xFFf2C611),
+    ));
+
+    final userInfo = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(left: 20.0),
+          child: Text(
+            details,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontFamily: "Lato", fontSize: 13.0, color: Color(0xFFa3a5a7)),
+          ),
+        ),
+        Row(
+          children: <Widget>[star, star, star, star, star_border],
+        )
+      ],
     );
 
     final userName = Container(
