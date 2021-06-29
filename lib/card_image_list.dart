@@ -10,9 +10,9 @@ class CardImageList extends StatelessWidget {
         padding: EdgeInsets.all(25.0),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          CardImage("assets/img/cali/cali1.jpg"),
-          CardImage("assets/img/cali/cali2.jpg"),
-          CardImage("assets/img/cali/cali3.jpg")
+          CardImage("assets/img/cali/cali1.jpg", 350, 250, 80),
+          CardImage("assets/img/cali/cali2.jpg", 350, 250, 80),
+          CardImage("assets/img/cali/cali3.jpg", 350, 250, 80)
         ],
       ),
     );
