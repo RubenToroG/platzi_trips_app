@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'gradient_back.dart';
-import 'card_image.dart';
+import '../../../widgets/gradient_back.dart';
+import '../../../Place/ui/widgets/card_image.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override
